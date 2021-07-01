@@ -1,0 +1,56 @@
+<head>
+    <title>Docker</title>
+ <link href = "style.css" rel ="stylesheet" type="text/css">
+<script type = "text/javascript" src="docker.js"></script>  
+</head>
+<body>
+
+    <section>
+         <pre>
+    <textarea id="output" class="box" name="message" rows="20" cols="60">Output will be shown here ......</textarea>
+    </pre>
+
+        <h1>Docker</h1>
+        
+    <p><em><u>Empowering App Development for Develpers   </u> </em></p>
+    
+
+    <div ><button class="btn" onclick="listImages()"> View All Images </button></div>
+    <div ><button class="btn" onclick="listContainers()"> View All Containers </button> </div>
+    <div class="form">
+      <form>
+        <label for="cmd">CMD</label>
+        <input type="text" id="cmd" name="cmd" placeholder="Command">
+    
+        
+    
+        <label for="Attribute">Attribute</label>
+        <select id="attr" name="Attribute">
+          <option value="run">Run</option>
+          <option value="pull">Pull</option>
+          <option value="stop">Stop</option>
+          <option value="start">Start</option>        
+          <option value="attach">Attach</option>
+        </select>
+      
+        <input type="submit" value="RUN" onclick="otherCmd()">
+      </form>
+      <div class="kubernetes">
+        <h3>KUBERNETES </h3> 
+        <input id=kube_input type="text" class="box2" placeholder="Enter Command" color="blue"/>
+        <button id=kube_btn type="button" class="btn3" onclick="kubernetes()"> RUN </button>
+
+    </div>
+
+</div>
+    </div>
+        <div class="overlay"> </div>
+        <div class ="wave wave1"></div>
+        <div class ="wave wave2"></div>
+        <div class ="wave wave3"></div>
+        <div class ="wave wave4"></div>
+
+    </section>
+</body>
+
+    
